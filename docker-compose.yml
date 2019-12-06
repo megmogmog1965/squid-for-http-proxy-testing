@@ -1,0 +1,13 @@
+version: '3.1'
+services:
+  squid:
+    build: .
+    expose:
+      - "${HTTP_PORT}"
+    ports:
+      - "${HTTP_PORT}:${HTTP_PORT}"
+    environment:
+      - HTTP_PORT
+      - BASIC_AUTH_COMMENT_OUT
+      - BASIC_AUTH_USERNAME
+      - BASIC_AUTH_PASSWORD
