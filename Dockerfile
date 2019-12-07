@@ -32,4 +32,4 @@ ENTRYPOINT /bin/sh -c " \
     /bin/touch /etc/squid/passwd && \
     /usr/bin/htpasswd -b /etc/squid/passwd ${BASIC_AUTH_USERNAME} ${BASIC_AUTH_PASSWORD} && \
     /usr/local/bin/envsubst < /etc/squid/squid.conf.template > /etc/squid/squid.conf && \
-    /usr/sbin/squid -N -f /etc/squid/squid.conf "
+    /usr/sbin/squid -N -d 1 -f /etc/squid/squid.conf "
