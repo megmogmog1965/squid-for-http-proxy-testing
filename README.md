@@ -61,7 +61,7 @@ vi .env
 You can change squid http proxy port to ``8080``.
 
 ```
-# Squi proxy port.
+# Squid proxy port.
 HTTP_PORT=8080
 
 # Basic authentication.
